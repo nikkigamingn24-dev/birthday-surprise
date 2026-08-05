@@ -1,225 +1,306 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Happy Birthday Shivani ❤️</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday My Love ❤️</title>
 
 <style>
-body{
+
+*{
 margin:0;
-padding:20px;
+padding:0;
+box-sizing:border-box;
 font-family:Arial,sans-serif;
-background:#ffe6f2;
+}
+
+body{
+background:linear-gradient(135deg,#ffdde1,#ee9ca7);
+overflow-x:hidden;
+color:white;
+}
+
+section{
+width:100%;
+min-height:100vh;
+display:none;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+padding:20px;
 text-align:center;
 }
 
-h1{
-color:#ff4d88;
-}
-
-button{
-background:#ff4d88;
-color:white;
-border:0;
-padding:15px 30px;
-border-radius:30px;
-font-size:18px;
-margin:15px;
-}
-
-.scene{
-min-height:100vh;
-display:none;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-}
-
-#welcome{
+#start{
 display:flex;
 }
 
+h1{
+font-size:55px;
+margin-bottom:20px;
+text-shadow:0 0 15px rgba(255,255,255,.7);
+}
+
+h2{
+font-size:38px;
+margin-bottom:20px;
+}
+
+p{
+font-size:22px;
+line-height:1.8;
+max-width:900px;
+}
+
+button{
+
+padding:18px 45px;
+font-size:22px;
+border:none;
+border-radius:50px;
+cursor:pointer;
+margin-top:30px;
+background:white;
+color:#ff4081;
+font-weight:bold;
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:scale(1.08);
+
+}
+
+.photo-box{
+
+display:flex;
+gap:25px;
+margin-top:35px;
+flex-wrap:wrap;
+justify-content:center;
+
+}
+
+.photo{
+
+width:300px;
+height:400px;
+object-fit:cover;
+border-radius:25px;
+border:8px solid white;
+box-shadow:0 0 30px rgba(255,255,255,.8);
+
+}
+
 .candle{
-font-size:100px;
+
+font-size:180px;
+animation:glow 1s infinite alternate;
+
 }
 
 .cake{
-font-size:120px;
-}
 
-.photos img{
-width:220px;
-height:220px;
-object-fit:cover;
-border-radius:25px;
-margin:15px;
-box-shadow:0 0 20px pink;
+font-size:220px;
+
 }
 
 .card{
+
 background:white;
-max-width:650px;
-margin:50px auto;
-padding:35px;
+color:#444;
+padding:40px;
 border-radius:30px;
-font-size:20px;
-line-height:1.8;
-box-shadow:0 0 25px pink;
+max-width:850px;
+box-shadow:0 0 30px rgba(255,255,255,.7);
+
+}
+
+@keyframes glow{
+
+from{
+transform:scale(1);
+filter:drop-shadow(0 0 10px yellow);
+}
+
+to{
+transform:scale(1.08);
+filter:drop-shadow(0 0 30px orange);
+}
+
 }
 
 .heart{
+
 position:fixed;
-bottom:0;
 font-size:30px;
-animation:up 5s linear;
+animation:fly 5s linear forwards;
+
 }
 
-@keyframes up{
-from{transform:translateY(0);}
-to{transform:translateY(-700px);}
+@keyframes fly{
+
+from{
+
+transform:translateY(0);
+opacity:1;
+
+}
+
+to{
+
+transform:translateY(-900px);
+opacity:0;
+
+}
+
 }
 
 </style>
-
 </head>
 
 <body>
 
+<section id="start">
 
-<div id="welcome" class="scene">
+<h1>🎁 Happy Birthday My Sweetheart ❤️</h1>
 
-<h1>🎁 Open Your Surprise ❤️</h1>
-<p>For my sweetheart Shivani ji 💖</p>
+<p>
+I have made a little surprise just for you...
+</p>
 
-<button onclick="openGift()">Open ❤️</button>
+<button onclick="openGift()">
 
-</div>
+Open Your Surprise ❤️
+
+</button>
+
+</section>
 
 
 
-<div id="candleScene" class="scene">
+<section id="candlePage">
 
-<h1>🕯️ Make A Wish Shivani ji ❤️</h1>
+<h2>🕯️ Make A Beautiful Wish ❤️</h2>
 
 <div id="candle" class="candle">
+
 🕯️
-</div>
-
-<button onclick="blow()">💨 Blow The Candle</button>
 
 </div>
 
+<button onclick="blowCandle()">
+
+💨 Blow The Candle
+
+</button>
+
+</section>
 
 
-<div id="cakeScene" class="scene">
 
-<h1>🎂 Cut Your Cake ❤️</h1>
+<section id="cakePage">
+
+<h2>🎂 Now Cut Your Birthday Cake ❤️</h2>
 
 <div id="cake" class="cake">
+
 🎂
-</div>
-
-<button onclick="cakeCut()">🎂 Cut Cake</button>
 
 </div>
 
+<button onclick="cutCake()">
+
+🎂 Cut Cake
+
+</button>
+
+</section>
 
 
-<div id="messageScene" class="scene">
 
-<h1>Happy Birthday My Love ❤️</h1>
+<section id="messagePage">
 
+<h1>Happy Birthday Shivani Ji ❤️</h1>
 
-<div class="photos">
+<div class="photo-box">
 
-<img src="photo1.jpg">
+<img class="photo" src="file_000000008a048208a933670dcab879f9.jpg">
 
-<img src="photo2.jpg">
-
-</div>
-
-
-<div class="card">
-
-Happy Birthday meri jaan Shivani ji ❤️🎂
-
-<br><br>
-
-Wish u a very very happy birthday my jaan, my sweetheart 💋😘
-
-<br><br>
-
-Tum meri life ka wo khoobsurat hissa ho jiske aane se meri duniya aur bhi special ban gayi hai. ❤️
-
-<br><br>
-
-Tumhari smile meri sabse favourite cheez hai aur tumhari khushi mere liye sabse important hai. 😊
-
-<br><br>
-
-Meri dua hai ki tum hamesha khush raho, hamesha muskurati raho aur tumhare saare sapne poore ho. ✨
-
-<br><br>
-
-"Teri muskurahat meri pehchaan ban gayi,
-<br>
-Teri khushi meri jaan ban gayi,
-<br>
-Rab se bas itni si dua hai meri,
-<br>
-Tu hamesha khush rahe kyunki tu meri duniya ban gayi." ❤️
-
-<br><br>
-
-Love you so much my sweet si wifey ❤️😘
-
-<br><br>
-
-Hamesha aise hi meri life me rehna 💖
-
-<br><br>
-
-Happy Birthday once again meri jaan 🎂❤️
+<img class="photo" src="file_00000000afc4720b97a47667f4467ce1.jpg">
 
 </div>
 
+<div class="card" id="letter">
+
+<!-- PART 3 ME MESSAGE AAYEGA -->
+
 </div>
 
+</section><script>
 
+function showPage(id){
 
-<script>
+document.querySelectorAll("section").forEach(function(sec){
+sec.style.display="none";
+});
 
-function show(id){
-document.querySelectorAll(".scene").forEach(x=>x.style.display="none");
 document.getElementById(id).style.display="flex";
+
 }
 
 function openGift(){
-show("candleScene");
+
+showPage("candlePage");
+
 }
 
-function blow(){
-document.getElementById("candle").innerHTML="💨🕯️";
-setTimeout(()=>show("cakeScene"),1000);
-}
+function blowCandle(){
 
-function cakeCut(){
-
-document.getElementById("cake").innerHTML="🍰❤️";
-
-setTimeout(()=>show("messageScene"),1200);
+document.getElementById("candle").innerHTML="💨";
 
 for(let i=0;i<20;i++){
+
 let h=document.createElement("div");
+
 h.className="heart";
+
 h.innerHTML="❤️";
-h.style.left=Math.random()*100+"%";
+
+h.style.left=Math.random()*100+"vw";
+h.style.bottom="0";
+
 document.body.appendChild(h);
-}
+
+setTimeout(()=>{
+h.remove();
+},5000);
 
 }
 
-</script>
+setTimeout(function(){
 
+showPage("cakePage");
 
-</body>
-</html>
+},1800);
+
+}
+
+function cutCake(){
+
+document.getElementById("cake").innerHTML="🍰";
+
+for(let i=0;i<40;i++){
+
+let h=document.createElement("div");
+
+h.className="heart";
+
+h.innerHTML=["❤️","💖","💕","💗"][Math.floor(Math.random()*4)];
+
+h.style.left=Math.random()*100+"vw";
+h.style.bottom="0";
+
+document
