@@ -1,169 +1,262 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Happy Birthday My Sweetheart ❤️</title>
+<title>Happy Birthday Shivani ❤️</title>
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-scroll-behavior:smooth;
-}
-
 body{
-
-background:linear-gradient(135deg,#ffdde1,#ee9ca7);
-overflow-x:hidden;
-
-}
-
-section{
-
-width:100%;
-height:100vh;
-
-display:none;
-
-justify-content:center;
-align-items:center;
-flex-direction:column;
-
-text-align:center;
-
-padding:20px;
-
-}
-
-#start{
-
-display:flex;
-
+    margin:0;
+    padding:20px;
+    text-align:center;
+    font-family:Arial,sans-serif;
+    background:#ffe6f2;
 }
 
 h1{
-
-font-size:55px;
-color:white;
-text-shadow:0 0 20px hotpink;
-
-}
-
-h2{
-
-font-size:40px;
-color:white;
-
-}
-
-p{
-
-font-size:22px;
-line-height:1.8;
-color:white;
-
+    color:#ff4d88;
 }
 
 button{
-
-margin-top:30px;
-
-padding:18px 45px;
-
-font-size:22px;
-
-border:none;
-
-border-radius:50px;
-
-background:white;
-
-color:#ff4081;
-
-cursor:pointer;
-
-transition:.3s;
-
-font-weight:bold;
-
+    background:#ff4d88;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    border-radius:30px;
+    font-size:18px;
+    margin:15px;
 }
 
-button:hover{
-
-transform:scale(1.08);
-
+.scene{
+    display:none;
 }
 
-.photo-box{
-
-display:flex;
-
-justify-content:center;
-
-gap:25px;
-
-flex-wrap:wrap;
-
-margin:30px;
-
-}
-
-.photo{
-
-width:300px;
-
-height:400px;
-
-object-fit:cover;
-
-border-radius:25px;
-
-border:8px solid white;
-
-box-shadow:0 0 30px white;
-
+#welcome{
+    display:block;
 }
 
 .candle{
-
-font-size:180px;
-
-animation:glow 1s infinite alternate;
-
+    font-size:90px;
+    margin:30px;
 }
 
 .cake{
-
-font-size:220px;
-
+    font-size:100px;
 }
 
 .card{
-
-background:white;
-
-color:#444;
-
-padding:40px;
-
-border-radius:30px;
-
-max-width:900px;
-
-box-shadow:0 0 30px white;
-
-font-size:22px;
-
-line-height:1.8;
-
+    background:white;
+    padding:35px;
+    margin:30px auto;
+    max-width:650px;
+    border-radius:30px;
+    font-size:20px;
+    line-height:1.8;
+    box-shadow:0 0 25px pink;
 }
 
 .heart{
+    position:fixed;
+    bottom:0;
+    font-size:30px;
+    animation:heart 5s linear;
+}
 
-position:fixed;
+@keyframes heart{
+    from{
+        transform:translateY(0);
+        opacity:1;
+    }
+    to{
+        transform:translateY(-700px);
+        opacity:0;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div id="welcome" class="scene">
+
+<h1>🎁 Open Your Surprise ❤️</h1>
+
+<p>For my sweetheart Shivani ji 💖</p>
+
+<button onclick="openGift()">
+Open ❤️
+</button>
+
+</div>
+
+
+
+<div id="candleScene" class="scene">
+
+<h1>🕯️ Make A Wish Shivani ji ❤️</h1>
+
+<div id="candle" class="candle">
+🕯️
+</div>
+
+<button onclick="blowCandle()">
+💨 Blow The Candle
+</button>
+
+</div>
+
+
+
+<div id="cakeScene" class="scene">
+
+<h1>🎂 Time To Cut The Cake ❤️</h1>
+
+<div id="cake" class="cake">
+🎂
+</div>
+
+<button onclick="cutCake()">
+🎂 Cut The Cake
+</button>
+
+</div>
+
+
+
+
+<div id="messageScene" class="scene">
+
+
+<h1>
+Happy Birthday My Sweetheart Shivani ji ❤️🎂
+</h1>
+
+
+<div class="card">
+
+
+Wish u a very very happy birthday my jaan, my sweetheart 💋😘
+
+<br><br>
+
+Tum meri life ka wo khoobsurat hissa ho jiske aane se meri duniya aur bhi special ban gayi hai. ❤️
+
+<br><br>
+
+Tumhari smile meri sabse favourite cheez hai. Tumhari khushi mere liye sabse important hai. 😊
+
+<br><br>
+
+Meri dua hai ki tum hamesha khush raho, hamesha muskurati raho aur tumhare saare sapne poore ho. ✨
+
+<br><br>
+
+<b>Ek chhoti si shayari meri jaan ke liye ❤️</b>
+
+<br><br>
+
+"Teri muskurahat meri pehchaan ban gayi,
+Teri khushi meri jaan ban gayi,
+Rab se bas itni si dua hai meri,
+Tu hamesha khush rahe,
+kyunki tu meri duniya ban gayi." ❤️
+
+<br><br>
+
+Love you so much my sweet si wifey ❤️😘
+
+<br><br>
+
+Hamesha aise hi meri life me rehna 💖
+
+<br><br>
+
+Happy Birthday once again meri jaan 🎂❤️
+
+
+</div>
+
+</div>
+
+
+
+
+<script>
+
+
+function show(id){
+
+document.getElementById("welcome").style.display="none";
+document.getElementById("candleScene").style.display="none";
+document.getElementById("cakeScene").style.display="none";
+document.getElementById("messageScene").style.display="none";
+
+document.getElementById(id).style.display="block";
+
+}
+
+
+
+function openGift(){
+
+show("candleScene");
+
+}
+
+
+
+function blowCandle(){
+
+document.getElementById("candle").innerHTML="💨🕯️";
+
+setTimeout(function(){
+
+show("cakeScene");
+
+},1000);
+
+}
+
+
+
+
+function cutCake(){
+
+document.getElementById("cake").innerHTML="🍰❤️";
+
+
+for(let i=0;i<30;i++){
+
+let h=document.createElement("div");
+
+h.className="heart";
+
+h.innerHTML="❤️";
+
+h.style.left=Math.random()*100+"%";
+
+document.body.appendChild(h);
+
+}
+
+
+setTimeout(function(){
+
+show("messageScene");
+
+},1500);
+
+
+}
+
+
+
+</script>
+
+
+</body>
+</html>
