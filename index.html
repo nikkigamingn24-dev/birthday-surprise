@@ -4,150 +4,140 @@
 <title>Happy Birthday Shivani ❤️</title>
 
 <style>
+
 body{
-margin:0;
-padding:20px;
-text-align:center;
-font-family:Arial,sans-serif;
-background:#ffe6f2;
-overflow-x:hidden;
-}
-
-#welcome{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:#ffe6f2;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-z-index:10;
-}
-
-#welcome button{
-background:#ff4d88;
-color:white;
-border:none;
-padding:15px 30px;
-border-radius:30px;
-font-size:20px;
+    margin:0;
+    padding:20px;
+    text-align:center;
+    font-family:Arial,sans-serif;
+    background:#ffe6f2;
 }
 
 h1{
-color:#ff4d88;
-}
-
-.photo{
-width:250px;
-height:250px;
-border-radius:50%;
-object-fit:cover;
-box-shadow:0 0 25px pink;
+    color:#ff4d88;
 }
 
 button{
-background:#ff4d88;
-color:white;
-border:none;
-padding:15px 25px;
-margin:10px;
-border-radius:30px;
-font-size:18px;
+    background:#ff4d88;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    border-radius:30px;
+    font-size:18px;
+    margin:15px;
+}
+
+.scene{
+    display:none;
+}
+
+#welcome{
+    display:block;
 }
 
 .candle{
-font-size:70px;
-margin:20px;
+    font-size:90px;
+    margin:30px;
 }
 
 .cake{
-font-size:90px;
+    font-size:100px;
 }
 
 .card{
-background:white;
-max-width:650px;
-margin:30px auto;
-padding:35px;
-border-radius:30px;
-font-size:20px;
-line-height:1.8;
-box-shadow:0 0 25px pink;
+    background:white;
+    padding:35px;
+    margin:30px auto;
+    max-width:650px;
+    border-radius:30px;
+    font-size:20px;
+    line-height:1.8;
+    box-shadow:0 0 25px pink;
 }
 
 .heart{
-position:fixed;
-bottom:-20px;
-font-size:30px;
-animation:up 5s linear infinite;
+    position:fixed;
+    bottom:0;
+    font-size:30px;
+    animation:heart 5s linear;
 }
 
-@keyframes up{
-from{
-transform:translateY(0);
+@keyframes heart{
+    from{
+        transform:translateY(0);
+        opacity:1;
+    }
+    to{
+        transform:translateY(-700px);
+        opacity:0;
+    }
 }
-to{
-transform:translateY(-700px);
-}
-}
+
 </style>
 
 </head>
 
+
 <body>
 
 
-<div id="welcome">
+<div id="welcome" class="scene">
 
-<h1>🎁 Tap To Open Your Surprise ❤️</h1>
+<h1>🎁 Open Your Surprise ❤️</h1>
 
 <p>For my sweetheart Shivani ji 💖</p>
 
-<button onclick="openGift()">Open ❤️</button>
+<button onclick="openGift()">
+Open ❤️
+</button>
 
 </div>
 
 
 
-<h1>Happy Birthday My Sweetheart Shivani ji ❤️🎂</h1>
+<div id="candleScene" class="scene">
 
-
-<img class="photo" src="photo.jpg">
-
-
-<h2>🎂 A Special Surprise For You 🎂</h2>
-
-
+<h1>🕯️ Make A Wish Shivani ji ❤️</h1>
 
 <div id="candle" class="candle">
 🕯️
 </div>
 
-
 <button onclick="blowCandle()">
 💨 Blow The Candle
 </button>
 
+</div>
 
-<button onclick="cutCake()">
-🎂 Cut The Cake
-</button>
 
+
+<div id="cakeScene" class="scene">
+
+<h1>🎂 Time To Cut The Cake ❤️</h1>
 
 <div id="cake" class="cake">
 🎂
 </div>
 
+<button onclick="cutCake()">
+🎂 Cut The Cake
+</button>
+
+</div>
+
+
+
+
+<div id="messageScene" class="scene">
+
+
+<h1>
+Happy Birthday My Sweetheart Shivani ji ❤️🎂
+</h1>
 
 
 <div class="card">
 
-Happy Birthday meri jaan Shivani ji ❤️🎂
-
-<br><br>
 
 Wish u a very very happy birthday my jaan, my sweetheart 💋😘
 
@@ -157,7 +147,7 @@ Tum meri life ka wo khoobsurat hissa ho jiske aane se meri duniya aur bhi specia
 
 <br><br>
 
-Tumhari ek smile mera din acha bana deti hai aur tumhari khushi mere liye sabse zyada important hai. 😊
+Tumhari smile meri sabse favourite cheez hai. Tumhari khushi mere liye sabse important hai. 😊
 
 <br><br>
 
@@ -165,14 +155,15 @@ Meri dua hai ki tum hamesha khush raho, hamesha muskurati raho aur tumhare saare
 
 <br><br>
 
-<b>Ek chhoti si shayari sirf tumhare liye ❤️</b>
+<b>Ek chhoti si shayari meri jaan ke liye ❤️</b>
 
 <br><br>
 
-"Teri muskurahat meri pehchaan ban gayi,<br>
-Teri khushi meri jaan ban gayi,<br>
-Rab se bas itni si dua hai meri,<br>
-Tu hamesha khush rahe kyunki tu meri duniya ban gayi." ❤️
+"Teri muskurahat meri pehchaan ban gayi,
+Teri khushi meri jaan ban gayi,
+Rab se bas itni si dua hai meri,
+Tu hamesha khush rahe,
+kyunki tu meri duniya ban gayi." ❤️
 
 <br><br>
 
@@ -186,29 +177,57 @@ Hamesha aise hi meri life me rehna 💖
 
 Happy Birthday once again meri jaan 🎂❤️
 
+
 </div>
+
+</div>
+
 
 
 
 <script>
 
-function openGift(){
+
+function show(id){
+
 document.getElementById("welcome").style.display="none";
+document.getElementById("candleScene").style.display="none";
+document.getElementById("cakeScene").style.display="none";
+document.getElementById("messageScene").style.display="none";
+
+document.getElementById(id).style.display="block";
+
 }
+
+
+
+function openGift(){
+
+show("candleScene");
+
+}
+
 
 
 function blowCandle(){
 
 document.getElementById("candle").innerHTML="💨🕯️";
 
-alert("Wish accepted Shivani ji ❤️🎂");
+setTimeout(function(){
+
+show("cakeScene");
+
+},1000);
 
 }
+
+
 
 
 function cutCake(){
 
 document.getElementById("cake").innerHTML="🍰❤️";
+
 
 for(let i=0;i<30;i++){
 
@@ -224,7 +243,17 @@ document.body.appendChild(h);
 
 }
 
+
+setTimeout(function(){
+
+show("messageScene");
+
+},1500);
+
+
 }
+
+
 
 </script>
 
