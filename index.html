@@ -1,119 +1,167 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Happy Birthday ❤️</title>
+<title>Happy Birthday Shivani ❤️</title>
 
 <style>
 body{
+    margin:0;
+    padding:20px;
     text-align:center;
-    font-family:Arial, sans-serif;
+    font-family:Arial,sans-serif;
     background:#ffe6f2;
-    padding:30px;
+    overflow-x:hidden;
 }
 
 h1{
     color:#ff4d88;
+    font-size:32px;
 }
 
-<img src="file_000000008a048208a933670dcab879f9.jpg">
-    width:150px;
+.photo{
+    width:250px;
     height:250px;
-    object-fit:cover;
     border-radius:50%;
-    box-shadow:0 0 20px pink;
+    object-fit:cover;
+    box-shadow:0 0 25px pink;
+}
+
+button{
+    background:#ff4d88;
+    color:white;
+    border:0;
+    padding:15px 25px;
+    margin:10px;
+    border-radius:30px;
+    font-size:18px;
 }
 
 .candle{
-    font-size:60px;
-    animation: glow 1s infinite alternate;
+    font-size:70px;
 }
 
 .cake{
-    font-size:80px;
+    font-size:90px;
 }
 
-@keyframes glow{
-    from{transform:scale(1);}
-    to{transform:scale(1.1);}
-}
-
-.message{
-.message{
-    .message{
-    font-size:22px;
-    color:#444;
-    background:#ffffff;
-    padding:40px;
-    margin:40px auto;
-    width:80%;
+.card{
+    background:white;
     max-width:650px;
+    margin:30px auto;
+    padding:35px;
     border-radius:30px;
+    font-size:20px;
     line-height:1.8;
-    text-align:center;
-    box-shadow:0 0 20px rgba(255,105,180,0.5);
+    box-shadow:0 0 25px pink;
+}
+
+.heart{
+    position:fixed;
+    bottom:-20px;
+    font-size:30px;
+    animation:up 5s linear infinite;
+}
+
+@keyframes up{
+    from{
+        transform:translateY(0);
+        opacity:1;
+    }
+    to{
+        transform:translateY(-700px);
+        opacity:0;
     }
 }
-}
-</style> wish u happy happy 
-    birthday my jaan my sweetheart 💋 😘 
-    my sweet si wife happy birthday 🎂 🎈 9
-    😘😘😘😘😘😘😘😘😘😘😘😘
-    Love uh so much my sweet si wifey 
-}
+</style>
 
 </head>
 
 <body>
 
-<h1>Happy Birthday My Love  my jaan ❤️</h1>
+<h1>Happy Birthday My Sweetheart Shivani ji ❤️🎂</h1>
 
-<img src="photo.jpg">
+<img class="photo" src="photo.jpg">
 
-<h2>🎂 A Small Surprise For You 🎂</h2>
+<h2>🎁 A Special Surprise For You 🎁</h2>
 
-    <button onclick="lightCandle()">🕯️ Light the Candle</button>
-
-<button onclick="lightCandle()">🕯️ Light the Candle</button>
+<button onclick="lightCandle()">🕯️ Light The Candle</button>
 
 <div id="candle" class="candle">🕯️</div>
 
-<div class="cake">🎂</div>
+<button onclick="cutCake()">🎂 Cut The Cake</button>
 
-<p class="message">
-<p class="message">
-Happy Birthday meri jaan Shivani ji ❤️<br><br>
-Tum meri life ka bahut special hissa ho.<br>
-Meri dua hai ki tum hamesha khush raho,<br>
-hamesha aise hi muskurati raho 😊<br><br>
-Love you my sweetheart ❤️
-</p>❤️<br>
+<div id="cake" class="cake">🎂</div>
+
+
+<div class="card">
+
 Happy Birthday meri jaan Shivani ji ❤️🎂
 
+<br><br>
+
+Wish u a very very happy birthday my jaan, my sweetheart 💋😘
+
+<br><br>
+
 Tum meri life ka wo khoobsurat hissa ho jiske aane se meri duniya aur bhi special ban gayi hai. ❤️
+
+<br><br>
+
 Tumhari ek smile mera din acha bana deti hai aur tumhari khushi mere liye sabse zyada important hai. 😊
 
+<br><br>
+
 Meri dua hai ki tum hamesha khush raho, hamesha muskurati raho aur tumhare saare sapne poore ho. ✨
-Thank you meri life me aane ke liye aur itni saari khushiyan dene ke liye. ❤️
 
-Ek chhoti si shayari sirf tumhare liye:
+<br><br>
 
-"Teri muskurahat meri pehchaan ban gayi,
-Teri khushi meri jaan ban gayi,
-Rab se bas itni si dua hai meri,
-Tu hamesha khush rahe, kyunki tu meri duniya ban gayi." ❤️
+Thank you meri life me aane ke liye aur itni saari khushiyan dene ke liye ❤️
 
-Love you my sweetheart Shivani ji ❤️
-Hamesha aise hi meri life me rehna. 💖
+<br><br>
 
-Happy Birthday once again meri jaan 🎂❤️<br>
+<b>Ek chhoti si shayari meri jaan ke liye ❤️</b>
 
-</p>
+<br><br>
+
+"Teri muskurahat meri pehchaan ban gayi,<br>
+Teri khushi meri jaan ban gayi,<br>
+Rab se bas itni si dua hai meri,<br>
+Tu hamesha khush rahe kyunki tu meri duniya ban gayi." ❤️
+
+<br><br>
+
+Love you so much my sweet si wifey ❤️😘
+
+<br><br>
+
+Hamesha aise hi meri life me rehna 💖
+
+<br><br>
+
+Happy Birthday once again meri jaan 🎂❤️
+
+</div>
+
+
 <script>
+
 function lightCandle(){
-    document.getElementById("candle").innerHTML="🔥🕯️";
-    alert("Make a wish Shivani ji ❤️"); 
-    }
-     </script>
-    
-    </body>
+document.getElementById("candle").innerHTML="🔥🕯️";
+alert("Make a wish Shivani ji ❤️");
+}
+
+function cutCake(){
+document.getElementById("cake").innerHTML="🍰❤️";
+for(let i=0;i<20;i++){
+let h=document.createElement("div");
+h.className="heart";
+h.innerHTML="❤️";
+h.style.left=Math.random()*100+"%";
+document.body.appendChild(h);
+}
+}
+
+</script>
+
+</body>
 </html>
