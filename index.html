@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Birthday My Love ❤️</title>
+
+<title>Happy Birthday My Sweetheart ❤️</title>
 
 <style>
 
@@ -12,58 +14,83 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:Arial,sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
+
 background:linear-gradient(135deg,#ffdde1,#ee9ca7);
 overflow-x:hidden;
-color:white;
+
 }
 
 section{
+
 width:100%;
-min-height:100vh;
+height:100vh;
+
 display:none;
+
 justify-content:center;
 align-items:center;
 flex-direction:column;
-padding:20px;
+
 text-align:center;
+
+padding:20px;
+
 }
 
 #start{
+
 display:flex;
+
 }
 
 h1{
+
 font-size:55px;
-margin-bottom:20px;
-text-shadow:0 0 15px rgba(255,255,255,.7);
+color:white;
+text-shadow:0 0 20px hotpink;
+
 }
 
 h2{
-font-size:38px;
-margin-bottom:20px;
+
+font-size:40px;
+color:white;
+
 }
 
 p{
+
 font-size:22px;
 line-height:1.8;
-max-width:900px;
+color:white;
+
 }
 
 button{
 
-padding:18px 45px;
-font-size:22px;
-border:none;
-border-radius:50px;
-cursor:pointer;
 margin-top:30px;
+
+padding:18px 45px;
+
+font-size:22px;
+
+border:none;
+
+border-radius:50px;
+
 background:white;
+
 color:#ff4081;
-font-weight:bold;
+
+cursor:pointer;
+
 transition:.3s;
+
+font-weight:bold;
 
 }
 
@@ -76,27 +103,37 @@ transform:scale(1.08);
 .photo-box{
 
 display:flex;
-gap:25px;
-margin-top:35px;
-flex-wrap:wrap;
+
 justify-content:center;
+
+gap:25px;
+
+flex-wrap:wrap;
+
+margin:30px;
 
 }
 
 .photo{
 
 width:300px;
+
 height:400px;
+
 object-fit:cover;
+
 border-radius:25px;
+
 border:8px solid white;
-box-shadow:0 0 30px rgba(255,255,255,.8);
+
+box-shadow:0 0 30px white;
 
 }
 
 .candle{
 
 font-size:180px;
+
 animation:glow 1s infinite alternate;
 
 }
@@ -110,133 +147,23 @@ font-size:220px;
 .card{
 
 background:white;
+
 color:#444;
+
 padding:40px;
+
 border-radius:30px;
-max-width:850px;
-box-shadow:0 0 30px rgba(255,255,255,.7);
 
-}
+max-width:900px;
 
-@keyframes glow{
+box-shadow:0 0 30px white;
 
-from{
-transform:scale(1);
-filter:drop-shadow(0 0 10px yellow);
-}
+font-size:22px;
 
-to{
-transform:scale(1.08);
-filter:drop-shadow(0 0 30px orange);
-}
+line-height:1.8;
 
 }
 
 .heart{
 
 position:fixed;
-font-size:30px;
-animation:fly 5s linear forwards;
-
-}
-
-@keyframes fly{
-
-from{
-
-transform:translateY(0);
-opacity:1;
-
-}
-
-to{
-
-transform:translateY(-900px);
-opacity:0;
-
-}
-
-}
-
-</style>
-</head>
-
-<body>
-
-<section id="start">
-
-<h1>🎁 Happy Birthday My Sweetheart ❤️</h1>
-
-<p>
-I have made a little surprise just for you...
-</p>
-
-<button onclick="openGift()">
-
-Open Your Surprise ❤️
-
-</button>
-
-</section>
-
-
-
-<section id="candlePage">
-
-<h2>🕯️ Make A Beautiful Wish ❤️</h2>
-
-<div id="candle" class="candle">
-
-🕯️
-
-</div>
-
-<button onclick="blowCandle()">
-
-💨 Blow The Candle
-
-</button>
-
-</section>
-
-
-
-<section id="cakePage">
-
-<h2>🎂 Now Cut Your Birthday Cake ❤️</h2>
-
-<div id="cake" class="cake">
-
-🎂
-
-</div>
-
-<button onclick="cutCake()">
-
-🎂 Cut Cake
-
-</button>
-
-</section>
-
-
-
-<section id="messagePage">
-
-<h1>Happy Birthday Shivani Ji ❤️</h1>
-
-<div class="photo-box">
-
-<img class="photo" src="file_000000008a048208a933670dcab879f9.jpg">
-
-<img class="photo" src="file_00000000afc4720b97a47667f4467ce1.jpg">
-
-</div>
-
-<div class="card" id="letter">
-
-<!-- PART 3 ME MESSAGE AAYEGA -->
-
-</div>
-
-</section>
