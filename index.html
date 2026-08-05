@@ -71,7 +71,9 @@ h1{
 
 <h2>🎂 A Small Surprise For You 🎂</h2>
 
-<div class="candle">🕯️</div>
+    <button onclick="lightCandle()">🕯️ Light the Candle</button>
+
+<div id="candle" class="candle">🕯️</div>
 
 <div class="cake">🎂</div>
 
@@ -104,6 +106,12 @@ Hamesha aise hi meri life me rehna. 💖
 Happy Birthday once again meri jaan 🎂❤️<br>
 
 </p>
-
-</body>
+<script>
+function lightCandle(){
+    document.getElementById("candle").innerHTML="🔥🕯️";
+    alert("Make a wish Shivani ji ❤️"); 
+    }
+     </script>
+    
+    </body>
     </html>
