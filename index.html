@@ -5,72 +5,93 @@
 
 <style>
 body{
-    margin:0;
-    padding:20px;
-    text-align:center;
-    font-family:Arial,sans-serif;
-    background:#ffe6f2;
-    overflow-x:hidden;
+margin:0;
+padding:20px;
+text-align:center;
+font-family:Arial,sans-serif;
+background:#ffe6f2;
+overflow-x:hidden;
+}
+
+#welcome{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#ffe6f2;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+z-index:10;
+}
+
+#welcome button{
+background:#ff4d88;
+color:white;
+border:none;
+padding:15px 30px;
+border-radius:30px;
+font-size:20px;
 }
 
 h1{
-    color:#ff4d88;
-    font-size:32px;
+color:#ff4d88;
 }
 
 .photo{
-    width:250px;
-    height:250px;
-    border-radius:50%;
-    object-fit:cover;
-    box-shadow:0 0 25px pink;
+width:250px;
+height:250px;
+border-radius:50%;
+object-fit:cover;
+box-shadow:0 0 25px pink;
 }
 
 button{
-    background:#ff4d88;
-    color:white;
-    border:0;
-    padding:15px 25px;
-    margin:10px;
-    border-radius:30px;
-    font-size:18px;
+background:#ff4d88;
+color:white;
+border:none;
+padding:15px 25px;
+margin:10px;
+border-radius:30px;
+font-size:18px;
 }
 
 .candle{
-    font-size:70px;
+font-size:70px;
+margin:20px;
 }
 
 .cake{
-    font-size:90px;
+font-size:90px;
 }
 
 .card{
-    background:white;
-    max-width:650px;
-    margin:30px auto;
-    padding:35px;
-    border-radius:30px;
-    font-size:20px;
-    line-height:1.8;
-    box-shadow:0 0 25px pink;
+background:white;
+max-width:650px;
+margin:30px auto;
+padding:35px;
+border-radius:30px;
+font-size:20px;
+line-height:1.8;
+box-shadow:0 0 25px pink;
 }
 
 .heart{
-    position:fixed;
-    bottom:-20px;
-    font-size:30px;
-    animation:up 5s linear infinite;
+position:fixed;
+bottom:-20px;
+font-size:30px;
+animation:up 5s linear infinite;
 }
 
 @keyframes up{
-    from{
-        transform:translateY(0);
-        opacity:1;
-    }
-    to{
-        transform:translateY(-700px);
-        opacity:0;
-    }
+from{
+transform:translateY(0);
+}
+to{
+transform:translateY(-700px);
+}
 }
 </style>
 
@@ -78,19 +99,48 @@ button{
 
 <body>
 
+
+<div id="welcome">
+
+<h1>🎁 Tap To Open Your Surprise ❤️</h1>
+
+<p>For my sweetheart Shivani ji 💖</p>
+
+<button onclick="openGift()">Open ❤️</button>
+
+</div>
+
+
+
 <h1>Happy Birthday My Sweetheart Shivani ji ❤️🎂</h1>
+
 
 <img class="photo" src="photo.jpg">
 
-<h2>🎁 A Special Surprise For You 🎁</h2>
 
-<button onclick="lightCandle()">🕯️ Light The Candle</button>
+<h2>🎂 A Special Surprise For You 🎂</h2>
 
-<div id="candle" class="candle">🕯️</div>
 
-<button onclick="cutCake()">🎂 Cut The Cake</button>
 
-<div id="cake" class="cake">🎂</div>
+<div id="candle" class="candle">
+🕯️
+</div>
+
+
+<button onclick="blowCandle()">
+💨 Blow The Candle
+</button>
+
+
+<button onclick="cutCake()">
+🎂 Cut The Cake
+</button>
+
+
+<div id="cake" class="cake">
+🎂
+</div>
+
 
 
 <div class="card">
@@ -115,11 +165,7 @@ Meri dua hai ki tum hamesha khush raho, hamesha muskurati raho aur tumhare saare
 
 <br><br>
 
-Thank you meri life me aane ke liye aur itni saari khushiyan dene ke liye ❤️
-
-<br><br>
-
-<b>Ek chhoti si shayari meri jaan ke liye ❤️</b>
+<b>Ek chhoti si shayari sirf tumhare liye ❤️</b>
 
 <br><br>
 
@@ -143,25 +189,45 @@ Happy Birthday once again meri jaan 🎂❤️
 </div>
 
 
+
 <script>
 
-function lightCandle(){
-document.getElementById("candle").innerHTML="🔥🕯️";
-alert("Make a wish Shivani ji ❤️");
+function openGift(){
+document.getElementById("welcome").style.display="none";
 }
 
-function cutCake(){
-document.getElementById("cake").innerHTML="🍰❤️";
-for(let i=0;i<20;i++){
-let h=document.createElement("div");
-h.className="heart";
-h.innerHTML="❤️";
-h.style.left=Math.random()*100+"%";
-document.body.appendChild(h);
+
+function blowCandle(){
+
+document.getElementById("candle").innerHTML="💨🕯️";
+
+alert("Wish accepted Shivani ji ❤️🎂");
+
 }
+
+
+function cutCake(){
+
+document.getElementById("cake").innerHTML="🍰❤️";
+
+for(let i=0;i<30;i++){
+
+let h=document.createElement("div");
+
+h.className="heart";
+
+h.innerHTML="❤️";
+
+h.style.left=Math.random()*100+"%";
+
+document.body.appendChild(h);
+
+}
+
 }
 
 </script>
+
 
 </body>
 </html>
