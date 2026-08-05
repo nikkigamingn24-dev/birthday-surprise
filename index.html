@@ -1,299 +1,42 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Happy Birthday Shivani ❤️</title>
-
+<html><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Happy Birthday Shivani Ji ❤️</title>
 <style>
-
-body{
-    margin:0;
-    padding:20px;
-    text-align:center;
-    font-family:Arial,sans-serif;
-    background:#ffe6f2;
-}
-<p style="font-size:28px;color:#ff4d88;font-weight:bold;">
-I Love You My Sweetheart ❤️
-</p>
-
-<p style="font-size:24px;color:#555;">
-Wish You Happy Happy Returns Of The Day My Bacha 🥹❤️
-</p>
-h1{ <div class="candle" style="font-size:90px;">🕯️</div>
-
-<div class="cake" style="font-size:110px;">🎂</div>
-    color:#ff4d88;
-}
-
-button{
-    background:#ff4d88;
-    color:white;
-    border:none;
-    padding:15px 30px;
-    border-radius:30px;
-    font-size:18px;
-    margin:15px;
-}
-
-.scene{
-    display:none;
-    min-height:100vh;
-    justify-content:center;
-    align-items:center;
-    flex-direction:column;
-    text-align:center;
-}
-
-#welcome{
-    display:flex;
-}
-}
-
-}
-
-.candle{
-    font-size:90px;
-    margin:30px;
-}
-
-.cake{
-    font-size:100px;
-}
-
-.card{
-    background:white;
-    padding:35px;
-    margin:30px auto;
-    max-width:650px;
-    border-radius:30px;
-    font-size:20px;
-    line-height:1.8;
-    box-shadow:0 0 25px pink;
-}
-
-.heart{
-    position:fixed;
-    bottom:0;
-    font-size:30px;
-    animation:heart 5s linear;
-}
-
-@keyframes heart{
-    from{
-        transform:translateY(0);
-        opacity:1;
-    }
-    to{
-        transform:translateY(-700px);
-        opacity:0;
-    }
-}
-
-</style>
-
-</head>
-
-
-<body>
-
-
-<div id="welcome" class="scene">
-
-<h1>🎁 Open Your Surprise ❤️</h1>
-
-<p>For my sweetheart Shivani ji 💖</p>
-
-<button onclick="openGift()">
-Open ❤️
-</button>
-
-</div>
-
-
-
-<div id="candleScene" class="scene">
-
-<h1>🕯️ Make A Wish Shivani ji ❤️</h1>
-
-<div id="candle" class="candle">
-🕯️
-</div>
-
-<button onclick="blowCandle()">
-💨 Blow The Candle
-</button>
-
-</div>
-
-
-
-<div id="cakeScene" class="scene">
-
-<h1>🎂 Time To Cut The Cake ❤️</h1>
-
-<div id="cake" class="cake">
-🎂
-</div>
-
-<button onclick="cutCake()">
-🎂 Cut The Cake
-</button>
-
-</div>
-
-
-
-
-<div id="messageScene" class="scene">
-
-
-<h1>
-Happy Birthday My Sweetheart Shivani ji ❤️🎂
-</h1>
-
-
-<div class="card">
-
-
-Wish u a very very happy birthday my jaan, my sweetheart 💋😘
-
-<br><br>
-
-Tum meri life ka wo khoobsurat hissa ho jiske aane se meri duniya aur bhi special ban gayi hai. ❤️
-
-<br><br>
-
-Tumhari smile meri sabse favourite cheez hai. Tumhari khushi mere liye sabse important hai. 😊
-
-<br><br>
-
-Meri dua hai ki tum hamesha khush raho, hamesha muskurati raho aur tumhare saare sapne poore ho. ✨
-
-<br><br>
-
-<b>Ek chhoti si shayari meri jaan ke liye ❤️</b>
-
-<br><br>
-
-"Teri muskurahat meri pehchaan ban gayi,
-Teri khushi meri jaan ban gayi,
-Rab se bas itni si dua hai meri,
-Tu hamesha khush rahe,
-kyunki tu meri duniya ban gayi." ❤️
-
-<br><br>
-
-Love you so much my sweet si wifey ❤️😘
-
-<br><br>
-
-Hamesha aise hi meri life me rehna 💖
-
-<br><br>
-
-Happy Birthday once again meri jaan 🎂❤️
-
-
-</div>
-
-</div>
-
-
-
-
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,sans-serif}
+body{overflow:hidden;background:linear-gradient(135deg,#ffd6e7,#ffe8f3,#fff5fa);touch-action:manipulation}
+.screen{position:fixed;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px;opacity:0;pointer-events:none;transition:.8s}
+.active{opacity:1;pointer-events:auto}
+#final{justify-content:flex-start;overflow:auto;padding:30px}
+h1{color:#fff;text-shadow:0 0 12px #ff3f8b;font-size:clamp(2rem,5vw,3.5rem)}
+h2{color:#fff;margin:15px}
+button{padding:14px 28px;border:none;border-radius:40px;background:#ff4f93;color:#fff;font-size:1.1rem}
+.c{font-size:8rem;animation:f .3s infinite alternate}
+@keyframes f{to{transform:rotate(2deg)}from{transform:rotate(-2deg)}}
+.c.out{filter:grayscale(1);animation:none;opacity:.7}
+.cake{font-size:9rem}
+.card{background:#fff;color:#c2185b;max-width:850px;border-radius:22px;padding:25px;line-height:1.8;margin:20px auto}
+.images{display:flex;gap:16px;flex-wrap:wrap;justify-content:center}
+.images img{width:260px;max-width:42vw;border-radius:20px;border:4px solid #fff}
+.heart,.conf{position:fixed;pointer-events:none}
+.heart{bottom:-30px;font-size:24px;animation:up 6s linear forwards}
+@keyframes up{to{transform:translateY(-120vh) rotate(360deg);opacity:0}}
+.conf{width:8px;height:14px;animation:fall 3s linear forwards}
+@keyframes fall{to{transform:translateY(120vh) rotate(720deg);opacity:0}}
+.music{position:fixed;top:10px;right:10px}
+</style></head><body>
+<audio id=m loop><source src="birthday.mp3"></audio>
+<div class=music><button onclick="tg()">🎵</button></div>
+<div id=s1 class="screen active"><h1>🎁 Happy Birthday My Sweetheart Shivani Ji ❤️</h1><h2>For My Sweetheart Shivani Ji 💖</h2><button onclick="sh('s2');m.play().catch(()=>{})">Open Your Surprise ❤️</button></div>
+<div id=s2 class=screen><div id=can class=c>🕯️</div><h2>🕯️ Make A Beautiful Wish ❤️</h2><button onclick="can.classList.add('out');setTimeout(()=>sh('s3'),1500)">💨 Blow The Candle</button></div>
+<div id=s3 class=screen><div id=ck class=cake>🎂</div><button onclick="ck.textContent='🍰';cf();setTimeout(()=>{sh('final');fh()},1800)">🎂 Cut The Cake</button></div>
+<div id=final class=screen><h1>I Love You My Sweetheart ❤️</h1><h2>Wish You Happy Happy Returns Of The Day My Bacha 🥹❤️</h2>
+<div class=images><img src="file_000000008a048208a933670dcab879f9.jpg"><img src="file_00000000afc4720b97a47667f4467ce1.jpg"></div>
+<div class=card>Happy Birthday meri jaan Shivani ji ❤️🎂<br><br>Wish u a very very happy birthday my jaan, my sweetheart 💋😘<br><br>Tum meri life ka wo khoobsurat hissa ho jiske aane se meri duniya aur bhi special ban gayi hai. ❤️<br><br>Tumhari smile meri sabse favourite cheez hai. Tumhari khushi mere liye sabse important hai. 😊<br><br>Meri dua hai ki tum hamesha khush raho, hamesha muskurati raho aur tumhare saare sapne poore ho. ✨<br><br><b>Ek chhoti si shayari meri jaan ke liye ❤️</b><br><br>"Teri muskurahat meri pehchaan ban gayi,<br>Teri khushi meri jaan ban gayi,<br>Rab se bas itni si dua hai meri,<br>Tu hamesha khush rahe,<br>Kyunki tu meri duniya ban gayi." ❤️<br><br>Love you so much my sweet si wifey ❤️😘<br><br>Hamesha aise hi meri life me rehna 💖<br><br>Happy Birthday once again meri jaan 🎂❤️</div></div>
 <script>
-
-
-function show(id){
-
-document.getElementById("welcome").style.display="none";
-document.getElementById("candleScene").style.display="none";
-document.getElementById("cakeScene").style.display="none";
-document.getElementById("messageScene").style.display="none";
-
-document.getElementById(id).style.display="block";
-
-}
-
-
-
-function openGift(){
-
-show("candleScene");
-
-}
-
-
-
-function blowCandle(){
-
-document.getElementById("candle").innerHTML="💨🕯️";
-
-setTimeout(function(){
-
-show("cakeScene");
-
-},1000);
-
-}
-.photos{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-    margin-bottom:25px;
-}
-
-.photo{
-    width:220px;
-    height:300px;
-    object-fit:cover;
-    border-radius:20px;
-    border:5px solid white;
-    box-shadow:0 0 20px hotpink;
-    }
-<div class="photos">
-
-<img class="photo" src="file_000000008a048208a933670dcab879f9.jpg">
-
-<img class="photo" src="file_00000000afc4720b97a47667f4467ce1.jpg">
-
-</div>
-
-
-function cutCake(){
-
-document.getElementById("cake").innerHTML="🍰❤️";
-
-
-for(let i=0;i<30;i++){
-
-let h=document.createElement("div");
-
-h.className="heart";
-
-h.innerHTML="❤️";
-
-h.style.left=Math.random()*100+"%";
-
-document.body.appendChild(h);
-
-}
-
-
-setTimeout(function(){
-
-show("messageScene");
-
-},1500);
-
-
-}
-
-
-
-</script>
-
-
-</body>
-</html>
+const m=document.getElementById('m');
+function sh(i){document.querySelectorAll('.screen').forEach(x=>x.classList.remove('active'));document.getElementById(i).classList.add('active')}
+function tg(){m.paused?m.play():m.pause()}
+function fh(){setInterval(()=>{let d=document.createElement('div');d.className='heart';d.textContent=Math.random()>.5?'❤️':'💖';d.style.left=Math.random()*100+'vw';document.body.appendChild(d);setTimeout(()=>d.remove(),6000)},300)}
+function cf(){for(let i=0;i<150;i++){let d=document.createElement('div');d.className='conf';d.style.left=Math.random()*100+'vw';d.style.top='-20px';d.style.background='hsl('+Math.random()*360+',90%,60%)';document.body.appendChild(d);setTimeout(()=>d.remove(),3000)}}
+</script></body></html>
